@@ -1,6 +1,6 @@
 <div align="center">
-  <a href="https://raw.githubusercontent.com/amareque/react-native-simple-accordion/master/media/example-gif.gif?token=ANHDRQCV7LZLWNJZKWCUDXDBNHVZ6">
-  	<img src="https://raw.githubusercontent.com/amareque/react-native-simple-accordion/master/media/example-gif.gif?token=ANHDRQCV7LZLWNJZKWCUDXDBNHVZ6" alt="Simple Accordion Gif" height="160" />
+  <a href="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-gif.gif?raw=true">
+  	<img src="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-gif.gif?raw=true" alt="Simple Accordion Gif" height="160" />
   </a>
   <br>
   <br>
@@ -148,7 +148,7 @@ import { SimpleAccordion } from 'react-native-simple-accordion';
 ## Try it yourself 📱
 Try it on the expo app on your device
 
-[![Expo QR](https://raw.githubusercontent.com/amareque/react-native-simple-accordion/master/media/example-app-expo-qr.png?token=ANHDRQARMQLQ4EDV7R5DPQDBNHVZY)](https://expo.dev/@amareque/simple-accordion-example-app)
+[![Expo QR](https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-app-expo-qr.png?raw=true)](https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-app-expo-qr.png?raw=true)
 
 or try this [Snack](https://snack.expo.dev/@amareque/simple-accordion-example-snack)
 
@@ -161,7 +161,7 @@ With view =
 </View>
 ```
 
-<img src="https://raw.githubusercontent.com/amareque/react-native-simple-accordion/master/media/example-1.jpg?token=ANHDRQCLHRHLXVN5A2UYUBLBNHVYU" alt="Simple Accordion Gif" height="160" />
+<img src="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-1.jpg?raw=true" alt="Simple Accordion Gif" height="160" />
 
 
 Simple accordion
@@ -169,7 +169,7 @@ Simple accordion
 <SimpleAccordion viewInside={view} title={"Simple Accordion"}/>
 ```
 
-<img src="https://raw.githubusercontent.com/amareque/react-native-simple-accordion/master/media/example-2.jpg?token=ANHDRQDPKBR4S4N4B5AFVOTBNHVY2" alt="Simple Accordion Gif" height="160" />
+<img src="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-2.jpg?raw=true" alt="Simple Accordion Gif" height="160" />
 
 
 No Card accordion
@@ -177,28 +177,28 @@ No Card accordion
 <SimpleAccordion viewInside={view} title={"No Card Accordion"} showContentInsideOfCard={false} viewContainerStyle={{backgroundColor: "#E0E0E0"}}/>
 ```
 
-<img src="https://raw.githubusercontent.com/amareque/react-native-simple-accordion/master/media/example-3.jpg?token=ANHDRQAHARC6GGGBT32NB6LBNHVZE" alt="Simple Accordion Gif" height="160" />
+<img src="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-3.jpg?raw=true" alt="Simple Accordion Gif" height="160" />
 
 Custom Style accordion
 ```
 <SimpleAccordion viewInside={view} title={"Custom Style Accordion"} titleStyle={{fontStyle: "italic", color: "#FFFFFF", textDecorationLine: "underline"}} bannerStyle={{backgroundColor: "#7CA5B8"}} viewContainerStyle={{backgroundColor: "#C6EBBE"}}/>
 ```
 
-<img src="https://raw.githubusercontent.com/amareque/react-native-simple-accordion/master/media/example-4.jpg?token=ANHDRQAQHPRCKBYV7AEF7VTBNHVZI" alt="Simple Accordion Gif" height="160" />
+<img src="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-4.jpg?raw=true" alt="Simple Accordion Gif" height="160" />
 
 No Arrow accordion
 ```
 <SimpleAccordion viewInside={view} title={"No Arrows Accordion"} showArrows={false}/>
 ```
 
-<img src="https://raw.githubusercontent.com/amareque/react-native-simple-accordion/master/media/example-5.jpg?token=ANHDRQGLIUVFGJS77VMK6ILBNHVZO" alt="Simple Accordion Gif" height="160" />
+<img src="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-5.jpg?raw=true" alt="Simple Accordion Gif" height="160" />
 
 Custom Arrow Color Accordion
 ```
 <SimpleAccordion viewInside={view} title={"Custom Arrow Color Accordion"} />
 ```
 
-<img src="https://raw.githubusercontent.com/amareque/react-native-simple-accordion/master/media/example-6.jpg?token=ANHDRQDNWFXITIOKITUL2KLBNHVZU" alt="Simple Accordion Gif" height="160" />
+<img src="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-6.jpg?raw=true" alt="Simple Accordion Gif" height="160" />
 
 
 With view (with button) = 
