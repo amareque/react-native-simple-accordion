@@ -1,6 +1,6 @@
 {
   "name": "react-native-simple-accordion",
-  "version": "1.14.0",
+  "version": "1.16.0",
   "description": "React Native Simple Accordion is a lightweight and easy to use package that lets you encapsulate a view inside an accordion that's expandable and collapsable",
   "homepage": "https://github.com/amareque/react-native-simple-accordion#readme",
   "main": "lib/index.js",
