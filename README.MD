@@ -146,11 +146,13 @@ import { SimpleAccordion } from 'react-native-simple-accordion';
 <br>
 
 ## Try it yourself 📱
-Try it on the expo app on your device
+Try it on your device, by scanning this QR on the [Expo Go app](https://expo.dev/client):
 
 [![Expo QR](https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-app-expo-qr.png?raw=true)](https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-app-expo-qr.png?raw=true)
 
-or try this [Snack](https://snack.expo.dev/@amareque/simple-accordion-example-snack)
+(QR not showing? Visit the [Expo Project Page](https://expo.dev/@amareque/simple-accordion-example-app?serviceType=classic&distribution=expo-go))
+
+or simply try this [Snack](https://snack.expo.dev/@amareque/simple-accordion-example-snack) from your browser!
 
 ## Examples 📝
 

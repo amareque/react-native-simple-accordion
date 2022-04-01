@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-gif.gif?raw=true">
-   <img src="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-gif.gif?raw=true" alt="Simple Accordion Gif" height="160" />
+  	<img src="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-gif.gif?raw=true" alt="Simple Accordion Gif" height="160" />
   </a>
   <br>
   <br>
@@ -11,7 +11,7 @@
      <i>React Native Simple Accordion is a lightweight and easy to use package that lets you encapsulate a view inside an accordion that's expandable and collapsable</i>
   </p>
   <p>
-   
+
 ![npm](https://img.shields.io/npm/v/react-native-simple-accordion)
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/amareque/react-native-simple-accordion?style=social)
@@ -47,7 +47,7 @@ import { SimpleAccordion } from 'react-native-simple-accordion';
 ```
 <SimpleAccordion viewInside={<View/>} title={"My Accordion Title"}/>
 ```
-3. Replace the <View/> for whatever view you want to display inside the accordion. 
+3. Replace the <View/> for whatever view you want to display inside the accordion.
 
 4. Customize your accordion with the customization options.
 
@@ -72,31 +72,31 @@ import { SimpleAccordion } from 'react-native-simple-accordion';
    <tbody>
       <tr>
          <td>title</td>
-         <td>The accordions title   </td>
+         <td>The accordions title	</td>
          <td>string</td>
          <td>""</td>
       </tr>
       <tr>
          <td>startCollapsed</td>
-         <td>Defines if the accordion starts collapsed or expanded   </td>
+         <td>Defines if the accordion starts collapsed or expanded	</td>
          <td>boolean</td>
          <td>true</td>
       </tr>
       <tr>
          <td>showContentInsideOfCard</td>
-         <td>Defines if the accordion shows it's content inside a card or not </td>
+         <td>Defines if the accordion shows it's content inside a card or not	</td>
          <td>boolean</td>
          <td>true</td>
       </tr>
       <tr>
          <td>showArrows</td>
-         <td>Defines if the accordion shows arrows at it's right side   </td>
+         <td>Defines if the accordion shows arrows at it's right side	</td>
          <td>boolean</td>
          <td>true</td>
       </tr>
       <tr>
          <td>viewContainerStyle</td>
-         <td>The style of the container of viewInside attribute   </td>
+         <td>The style of the container of viewInside attribute	</td>
          <td>StyleProp&lt;ViewStyle&gt;</td>
          <td>
 <pre>
@@ -109,7 +109,7 @@ import { SimpleAccordion } from 'react-native-simple-accordion';
       </tr>
       <tr>
          <td>bannerStyle</td>
-         <td>The style of the banner   </td>
+         <td>The style of the banner	</td>
          <td>StyleProp&lt;ViewStyle&gt;</td>
          <td>
 <pre>
@@ -124,8 +124,8 @@ import { SimpleAccordion } from 'react-native-simple-accordion';
          </td>
       </tr>
       <tr>
-         <td>titleStyle </td>
-         <td>The style of the title </td>
+         <td>titleStyle	</td>
+         <td>The style of the title	</td>
          <td>StyleProp&lt;TextStyle&gt;</td>
          <td>
 <pre>
@@ -146,11 +146,13 @@ import { SimpleAccordion } from 'react-native-simple-accordion';
 <br>
 
 ## Try it yourself 📱
-Try it on the expo app on your device
+Try it on your device, by scanning this QR on the [Expo Go app](https://expo.dev/client):
 
 [![Expo QR](https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-app-expo-qr.png?raw=true)](https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-app-expo-qr.png?raw=true)
 
-or try this [Snack](https://snack.expo.dev/@amareque/simple-accordion-example-snack)
+(QR not showing? Visit the [Expo Project Page](https://expo.dev/@amareque/simple-accordion-example-app?serviceType=classic&distribution=expo-go))
+
+or simply try this [Snack](https://snack.expo.dev/@amareque/simple-accordion-example-snack) from your browser!
 
 ## Examples 📝
 
@@ -201,7 +203,7 @@ Custom Arrow Color Accordion
 <img src="https://github.com/amareque/react-native-simple-accordion/blob/master/media/example-6.jpg?raw=true" alt="Simple Accordion Gif" height="160" />
 
 
-With view (with button) = 
+With view (with button) =
 ```
 <View>
   <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue lacus ligula, at auctor felis ultrices at. Nullam porta metus nec odio fringilla fringilla. Nullam eget scelerisque metus. Nunc nec leo porta, pulvinar elit non, sagittis ipsum. Maecenas vel sem vel ipsum aliquet pharetra non eget neque. Cras vitae pulvinar purus, sed dictum augue. Proin mauris risus, dignissim a placerat ut, porta id lorem. Ut sit amet sapien nec metus porta dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas sit amet augue vestibulum, imperdiet massa vitae, mollis diam. Suspendisse dictum suscipit metus, et hendrerit orci. Integer id posuere velit. Ut aliquam auctor augue egestas tincidunt. Nulla tempus cursus sapien.</Text>
@@ -215,10 +217,10 @@ With view (with button) =
 
 <br>
 
-## Contributing 🍰 
+## Contributing 🍰
 
 This is my first publicly available package so until I figure out some guidelines and tools to work with others I won't
-be looking at forks and pull requests. If you want me to improve this package, feel free to reach out to me and I'll 
+be looking at forks and pull requests. If you want me to improve this package, feel free to reach out to me and I'll
 gladly update it.
 
 <br>

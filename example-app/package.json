@@ -13,8 +13,9 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-simple-accordion": "^1.12.0",
-    "react-native-web": "~0.13.12"
+    "react-native-simple-accordion": "^1.17.0",
+    "react-native-web": "~0.13.12",
+    "expo-updates": "~0.8.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
