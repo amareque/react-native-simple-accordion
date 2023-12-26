@@ -1,7 +1,4 @@
-import React from 'react';
-import { SimpleAccordion } from 'react-native-simple-accordion';
 import {Alert, Button, ScrollView, StyleSheet, Text, View} from 'react-native';
-import Constants from 'expo-constants'
 
 export default function App() {
   const view = (
@@ -130,4 +127,3 @@ const styles = StyleSheet.create({
     marginVertical: 16
   }
 });
-

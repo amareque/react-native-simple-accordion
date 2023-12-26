@@ -1,35 +1,60 @@
 import * as React from 'react'
-import { Image, StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from "react-native";
-import Collapsible from "react-native-collapsible";
+import { Image, StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native';
+import Collapsible from 'react-native-collapsible';
+import {forwardRef, useEffect, useImperativeHandle} from "react";
 
-const downArrow = require("./assets/ic-expand-more.png");
-const upArrow = require("./assets/ic-expand-less.png");
+const downArrow = require('./assets/ic-expand-more.png');
+const upArrow = require('./assets/ic-expand-less.png');
 
-const SimpleAccordion = (
-        {
-            title = "",
-            viewInside,
-            startCollapsed = true,
-            showContentInsideOfCard = true,
-            showArrows = true,
-            arrowColor = "#000000",
-            viewContainerStyle = {},
-            bannerStyle = {},
-            titleStyle = {}
-        }
-        :
-        {
-            title?: string,
-            viewInside: JSX.Element,
-            startCollapsed?: boolean,
-            showContentInsideOfCard?: boolean,
-            showArrows?: boolean,
-            arrowColor?: string,
-            viewContainerStyle?: StyleProp<ViewStyle>,
-            bannerStyle?: StyleProp<ViewStyle>,
-            titleStyle?: StyleProp<TextStyle>
-        }) => {
+type SimpleAccordionProps = {
+    title?: string,
+    viewInside: React.ReactElement,
+    startCollapsed?: boolean,
+    showContentInsideOfCard?: boolean,
+    showArrows?: boolean,
+    arrowColor?: string,
+    viewContainerStyle?: StyleProp<ViewStyle>,
+    bannerStyle?: StyleProp<ViewStyle>,
+    titleStyle?: StyleProp<TextStyle>,
+    onStateChange?: (isCollapsed: boolean) => void
+}
+
+const SimpleAccordion = forwardRef(({
+    title = "",
+    viewInside,
+    startCollapsed = true,
+    showContentInsideOfCard = true,
+    showArrows = true,
+    arrowColor = "#000000",
+    viewContainerStyle = {},
+    bannerStyle = {},
+    titleStyle = {},
+    onStateChange = () => {}
+} : SimpleAccordionProps, ref) => {
     const [isCollapsed, setIsCollapsed] = React.useState(startCollapsed);
+
+    const open = () => {
+        setIsCollapsed(false);
+    }
+
+    const close = () => {
+        setIsCollapsed(true);
+    }
+
+    const toggle = () => {
+        setIsCollapsed(!isCollapsed);
+    }
+
+    useImperativeHandle(ref, () => ({
+        isCollapsed,
+        open,
+        close,
+        toggle
+    }));
+
+    useEffect(() => {
+        onStateChange(isCollapsed);
+    }, [isCollapsed]);
 
     return (
         <View>
@@ -58,10 +83,10 @@ const SimpleAccordion = (
             </Collapsible>
         </View>
     )
-}
+});
 
 const styles = StyleSheet.create({
-    nothing: { },
+    nothing: {},
     arrows: {
         height: 32,
         width: 32,
@@ -103,6 +128,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export {
-    SimpleAccordion
-}
+export default SimpleAccordion;

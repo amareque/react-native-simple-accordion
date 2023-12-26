@@ -145,6 +145,34 @@ import { SimpleAccordion } from 'react-native-simple-accordion';
 
 <br>
 
+## Callbacks and ref functions
+
+| Callback / Function |                                    Description                                     | Signature / Example                                                                     |
+|---------------------|:----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------| 
+| onStateChange       | Callback for when the state changes from collapsed to not collapsed and vice-versa | (isCollapsed: boolean) => void                                                          |
+| open                |                                Opens the accordion                                 | -                                                                                       |
+| close               |                                Closes the accordion                                | Set the ref:<br/>const accordionRef = useRef(null); <br/> Then use: accordionRef.open() |
+| toggle              |         Toggles the accordion state, closing if open and opening if closed         | Set the ref:<br/>const accordionRef = useRef(null); <br/> Then use: accordionRef.open() |
+
+Usage of onStateChange callback:
+
+```
+<SimpleAccordion viewInside={<View/>} onStateChange={(isCollapsed: boolean) => console.log("isCollapsed: ", state)}/>
+```
+
+Usage of open, close and toggle ref functions: 
+
+```
+const accordionRef = useRef(null); 
+
+<SimpleAccordion ref={accordionRef} viewInside={<View/>}/>
+
+// Now you can call:
+// accordionRef.open();
+// accordionRef.close();
+// accordionRef.toggle();
+```
+
 ## Try it yourself 📱
 Try it on your device, by scanning this QR on the [Expo Go app](https://expo.dev/client):
 
