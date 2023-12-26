@@ -147,12 +147,13 @@ import { SimpleAccordion } from 'react-native-simple-accordion';
 
 ## Callbacks and ref functions
 
-| Callback / Function |                                    Description                                     | Signature / Example            |
-|---------------------|:----------------------------------------------------------------------------------:|:-------------------------------| 
-| onStateChange       | Callback for when the state changes from collapsed to not collapsed and vice-versa | (isCollapsed: boolean) => void |
-| open                |                                Opens the accordion                                 | -                              |
-| close               |                                Closes the accordion                                | -                              |
-| toggle              |         Toggles the accordion state, closing if open and opening if closed         | -                              |
+| Callback & Refs |                                    Description                                     | Signature / Example               |
+|-----------------|:----------------------------------------------------------------------------------:|:----------------------------------| 
+| onStateChange   | Callback for when the state changes from collapsed to not collapsed and vice-versa | (isCollapsed: boolean) => void    |
+| open            |                                Opens the accordion                                 | accordionRef.current?.open();     |
+| close           |                                Closes the accordion                                | accordionRef.current?.close();    |
+| toggle          |         Toggles the accordion state, closing if open and opening if closed         | accordionRef.current?.toggle();   |
+| isCollapsed     |                Checks the isCollapsed variable inside the component                | accordionRef.current?.isCollapsed |
 
 Usage of onStateChange callback:
 
@@ -171,6 +172,7 @@ const accordionRef = useRef(null);
 // accordionRef.current?.open();
 // accordionRef.current?.close();
 // accordionRef.current?.toggle();
+// accordionRef.current?.isCollapsed
 ```
 
 ## Try it yourself 📱
